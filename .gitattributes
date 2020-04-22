@@ -1,0 +1,7 @@
+/export export-ignore
+/.dockerignore export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/Dockerfile export-ignore
+/Makefile export-ignore
+/README.md export-ignore

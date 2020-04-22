@@ -1,0 +1,17 @@
+{
+    "name": "rikudou/lambda-imagick-layer",
+    "description": "A custom AWS Lambda imagick layer",
+    "type": "library",
+    "minimum-stability": "stable",
+    "require": {
+        "bref/bref": "^0.5.23"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Chrástecký",
+            "email": "dominik@chrastecky.cz"
+        }
+    ],
+    "keywords": ["aws", "lambda", "serverless", "bref"]
+}
