@@ -45,13 +45,23 @@ class PublishLayersCommand extends Command
             if ($exitCode !== 0) {
                 break;
             }
+
+            $result = json_decode(implode(PHP_EOL, $out), true);
+            $layerVersion = $result['Version'] ?? null;
+            if ($layerVersion === null) {
+                $output->writeln('Could not get version from the AWS output');
+                return 1;
+            }
+
+            passthru(
+                "aws lambda add-layer-version-permission --layer-name ${name}-${version} --statement-id layer-imagick-${version} --version-number ${layerVersion} --principal '*' --action lambda:GetLayerVersion",
+                $exitCode
+            );
+            if ($exitCode !== 0) {
+                break;
+            }
+
             if (!$input->getOption('dont-update-config')) {
-                $result = json_decode(implode(PHP_EOL, $out), true);
-                $layerVersion = $result['Version'] ?? null;
-                if ($layerVersion === null) {
-                    $output->writeln('Could not get version from the AWS output');
-                    return 1;
-                }
                 $newConfig = $this->getJson();
                 foreach ($newConfig[$version] as $region => $regionLayerVersion) {
                     $newConfig[$version][$region] = $layerVersion;
