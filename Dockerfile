@@ -37,4 +37,5 @@ COPY --from=ext /opt/bref/lib/libMagickCore-6.Q16.so.6.0.0 /opt/bref/lib/libMagi
 COPY --from=ext /usr/lib64/libwebp.so.4.0.2 /opt/bref/lib/libwebp.so.4
 # Move the imagick extension to the target directory
 COPY --from=ext /tmp/imagick.so /opt/bref/lib/php/extensions/no-debug-zts-${PHP_EXTENSION_DIR}/imagick.so
+COPY imagick.ini /opt/bref/etc/php/conf.d/imagick.ini
 
