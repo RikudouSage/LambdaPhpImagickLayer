@@ -2,12 +2,39 @@
     "awsAccountId": "725092069371",
     "awsLayerName": "imagick",
     "74": {
-        "eu-central-1": 7
+        "eu-central-1": 8,
+        "eu-west-1": 2,
+        "us-east-1": 1,
+        "us-east-2": 1,
+        "us-west-1": 1,
+        "us-west-2": 1,
+        "ca-central-1": 1,
+        "eu-west-2": 1,
+        "eu-west-3": 1,
+        "eu-north-1": 1
     },
     "73": {
-        "eu-central-1": 5
+        "eu-central-1": 6,
+        "eu-west-1": 2,
+        "us-east-1": 1,
+        "us-east-2": 1,
+        "us-west-1": 1,
+        "us-west-2": 1,
+        "ca-central-1": 1,
+        "eu-west-2": 1,
+        "eu-west-3": 1,
+        "eu-north-1": 1
     },
     "72": {
-        "eu-central-1": 5
+        "eu-central-1": 6,
+        "eu-west-1": 2,
+        "us-east-1": 1,
+        "us-east-2": 1,
+        "us-west-1": 1,
+        "us-west-2": 1,
+        "ca-central-1": 1,
+        "eu-west-2": 1,
+        "eu-west-3": 1,
+        "eu-north-1": 1
     }
 }
