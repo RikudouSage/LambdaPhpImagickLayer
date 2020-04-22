@@ -1,4 +1,4 @@
-# AWS Lambda imagick layer
+# AWS Lambda PHP imagick layer with HEIC and WEBP support
 
 This layer requires [bref](https://packagist.org/packages/bref/bref) to be installed.
 
