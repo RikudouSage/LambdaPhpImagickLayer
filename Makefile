@@ -34,7 +34,7 @@ images:
 publish: layers
 	set -e; \
 	for VERSION in $(VERSIONS); do \
-		aws lambda publish-layer-version --layer-name magick-$${VERSION} --zip-file fileb://./export/layer-php-imagick-$${VERSION}.zip; \
+		aws lambda publish-layer-version --layer-name imagick-$${VERSION} --zip-file fileb://./export/layer-php-imagick-$${VERSION}.zip; \
 	done
 
 clean:
