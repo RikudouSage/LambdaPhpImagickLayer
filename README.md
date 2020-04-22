@@ -59,4 +59,4 @@ Replace the values in curly braces with the desired values:
 
 - `{region}` - the AWS region (e.g. `eu-central-1`)
 - `{version}` - the php layer version (`72`, `73`, `74`)
-- `{layerVersion}` - the internal layer version, see file `config.json` for the latest version for each region
+- `{layerVersion}` - the internal layer version, see file [`config.json`](config.json) for the latest version for each region
