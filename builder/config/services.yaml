@@ -10,7 +10,7 @@ parameters:
     - eu-west-2
     - eu-west-3
     - eu-north-1
-  imagemagick_version: 6.9.11-7
+  imagemagick_version: 6.9.11-8
 
 services:
   _defaults:

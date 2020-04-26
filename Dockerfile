@@ -30,8 +30,9 @@ RUN make install
 
 # Compile the ImageMagick library
 WORKDIR ${IMAGICK_BUILD_DIR}
-RUN wget https://imagemagick.org/download/ImageMagick-${IMAGE_MAGICK_VERSION}.tar.gz -O ImageMagick.tar.gz
+RUN wget https://github.com/ImageMagick/ImageMagick6/archive/${IMAGE_MAGICK_VERSION}.tar.gz -O ImageMagick.tar.gz
 RUN tar xzf ImageMagick.tar.gz
+RUN mv ImageMagick6-${IMAGE_MAGICK_VERSION} ImageMagick-${IMAGE_MAGICK_VERSION} || true
 WORKDIR ${IMAGICK_BUILD_DIR}/ImageMagick-${IMAGE_MAGICK_VERSION}
 RUN ./configure --prefix ${INSTALL_DIR} --exec-prefix ${INSTALL_DIR} --with-webp --with-heic --disable-hdri --disable-static
 RUN make -j $(nproc)
