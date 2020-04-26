@@ -1,3 +1,3 @@
 parameters:
-  app_name: console
+  app_name: lambda-imagick-builder
   app_version: '1.0'
