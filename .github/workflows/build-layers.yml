@@ -30,9 +30,9 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: layers
-          path: exports
+          path: export
       - name: Publish Layers
-        uses: docker://rikudousage/php-composer:7.4
+        uses: ./.github/actions/aws-publish
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
