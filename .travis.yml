@@ -1,0 +1,10 @@
+language: php
+services:
+  - docker
+
+before_install:
+  - cd builder && composer install
+
+script:
+  - make layers
+  - ls -lah export
