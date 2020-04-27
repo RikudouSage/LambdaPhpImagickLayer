@@ -1,9 +1,0 @@
-language: php
-php:
-  - 7.4
-services:
-  - docker
-
-script:
-  - make layers
-  - ls -lah export

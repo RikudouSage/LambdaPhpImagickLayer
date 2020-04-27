@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/RikudouSage/LambdaPhpImagickLayer.svg?branch=master)](https://travis-ci.com/RikudouSage/LambdaPhpImagickLayer)
 [![Build Lambda Layers](https://github.com/RikudouSage/LambdaPhpImagickLayer/workflows/Build%20Lambda%20Layers/badge.svg)](https://github.com/RikudouSage/LambdaPhpImagickLayer/actions?query=workflow%3A%22Build+Lambda+Layers%22)
 
 # AWS Lambda PHP imagick layer with HEIC and WEBP support
