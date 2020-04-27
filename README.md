@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/RikudouSage/LambdaPhpImagickLayer.svg?branch=master)](https://travis-ci.com/RikudouSage/LambdaPhpImagickLayer)
+
 # AWS Lambda PHP imagick layer with HEIC and WEBP support
 
 This layer requires [bref](https://packagist.org/packages/bref/bref) to be installed.
