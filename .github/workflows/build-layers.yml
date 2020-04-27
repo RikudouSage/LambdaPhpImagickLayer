@@ -42,3 +42,4 @@ jobs:
           files: config.json
           name: GitHub Actions
           email: noreply@github.com
+          message: Published newest layer versions
